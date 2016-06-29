@@ -1,0 +1,48 @@
+body {
+  background: #000;
+  color: #eee;
+}
+
+h1 {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#calendar {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 5rem;
+  line-height: 7rem;
+}
+
+#day-wrapper {
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 0;
+  li {
+    display: inline-block;
+    border: 1px solid #eee;
+    width: 15%;
+    height: 115px;
+    margin: 5px;
+    &:hover {
+      border: 1px solid #232a2a;
+    }
+  }
+}
+
+.today {
+  background: #385553;
+}
+
+@media screen and (max-width: 750px) {
+  #calendar {
+    font-size: 3rem;
+  }
+  li {
+    height: 50px;
+  }
+}
